@@ -77,7 +77,8 @@ jobs:
 
   commit:
     name: Commit the formula
-    if: github.event_name == 'workflow_dispatch'
+    # A dispatch can name any ref; only main's formula is ever committed.
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     needs: [render, check]
     runs-on: ubuntu-24.04
     timeout-minutes: 5
