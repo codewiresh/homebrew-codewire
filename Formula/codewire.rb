@@ -5,26 +5,26 @@
 class Codewire < Formula
   desc "Run coding agents in cloud and local sandboxes"
   homepage "https://codewire.sh"
-  version "0.4.32"
+  version "0.4.33"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://releases.codewire.sh/cw/v1/blobs/sha256/34ccfbf6132c00419665d7f6abf322d245584ce38e2cb5fa194d2bebb18a1d7d"
-      sha256 "34ccfbf6132c00419665d7f6abf322d245584ce38e2cb5fa194d2bebb18a1d7d"
+      url "https://releases.codewire.sh/cw/v1/blobs/sha256/18a0b96836c586598bfb296cadc7b3b2ff76c4f018d4b3fd9d6306f5921bdd1d"
+      sha256 "18a0b96836c586598bfb296cadc7b3b2ff76c4f018d4b3fd9d6306f5921bdd1d"
     else
-      url "https://releases.codewire.sh/cw/v1/blobs/sha256/11a3eb4d4947436555d604d6dee7ba4e31dcc074290f6defb271f0443367180d"
-      sha256 "11a3eb4d4947436555d604d6dee7ba4e31dcc074290f6defb271f0443367180d"
+      url "https://releases.codewire.sh/cw/v1/blobs/sha256/d5dd76b473cb7a87e5ae8d1aa4f622a9002cba3600f8dc5a1216dfa4a610d554"
+      sha256 "d5dd76b473cb7a87e5ae8d1aa4f622a9002cba3600f8dc5a1216dfa4a610d554"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://releases.codewire.sh/cw/v1/blobs/sha256/b96c00794c6dc2258f47a0a621f27f51390493aff81993270064ea2325861ae5"
-      sha256 "b96c00794c6dc2258f47a0a621f27f51390493aff81993270064ea2325861ae5"
+      url "https://releases.codewire.sh/cw/v1/blobs/sha256/692ab91511ffa3cd1bf2db6346adcf58c8189d35dfb897ea56345d1af3bb5648"
+      sha256 "692ab91511ffa3cd1bf2db6346adcf58c8189d35dfb897ea56345d1af3bb5648"
     else
-      url "https://releases.codewire.sh/cw/v1/blobs/sha256/c2bb9334431d9669cf894345544f2f7cca16324232997294696a6fe8c6edbd12"
-      sha256 "c2bb9334431d9669cf894345544f2f7cca16324232997294696a6fe8c6edbd12"
+      url "https://releases.codewire.sh/cw/v1/blobs/sha256/1d4c1878d544ff5b6c8f1763f7640bdbd977daa355e488be3dcd490268be1b24"
+      sha256 "1d4c1878d544ff5b6c8f1763f7640bdbd977daa355e488be3dcd490268be1b24"
     end
   end
 
